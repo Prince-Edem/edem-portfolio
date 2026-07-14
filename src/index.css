@@ -47,23 +47,8 @@
   }
 }
 
-/* Light mode (default / root) — soft off-white background, black text */
+
 :root {
-  --surface: #f9fafb;       /* soft off-white, not harsh pure white */
-  --surface-deep: #f3f4f6;  /* page background, slightly deeper */
-  --ink: #000000;           /* primary text: black */
-  --ink-soft: #111827;
-  --ink-faint: #111827;
-  --ink-muted: #374151;
-  --ink-subtle: #4b5563;
-  --track: #eaebeea0;
-
-  --shadow-accent-20: rgba(59, 130, 246, 0.2);
-  --shadow-accent-40: rgba(59, 130, 246, 0.4);
-}
-
-/* Dark mode — toggled via .dark class on <html> by ThemeToggle */
-.dark {
   --surface: #000000;
   --surface-deep: #0a0a0a;
   --ink: #ffffff;
@@ -72,6 +57,21 @@
   --ink-muted: #d1d5db;
   --ink-subtle: #9ca3af;
   --track: #10101083;
+
+  --shadow-accent-20: rgba(59, 130, 246, 0.2);
+  --shadow-accent-40: rgba(59, 130, 246, 0.4);
+}
+
+
+.light {
+  --surface: #f9fafb;       
+  --surface-deep: #f3f4f6; 
+  --ink: #000000;           
+  --ink-soft: #111827;
+  --ink-faint: #111827;
+  --ink-muted: #374151;
+  --ink-subtle: #4b5563;
+  --track: #eaebeea0;
 }
 
 html, body {

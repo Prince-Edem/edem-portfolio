@@ -1,4 +1,5 @@
 import { useEffect } from "react"
+import { X } from "lucide-react";
 
 export const MobileMenu = ({menuOpen, setMenuOpen}) => {
 
@@ -10,10 +11,10 @@ export const MobileMenu = ({menuOpen, setMenuOpen}) => {
                   ${menuOpen ? "h-screen opacity-100 pointer-events-auto" : "h-0 opacity-0 pointer-events-none"}`}
     >
       <button onClick={() => setMenuOpen(false)} 
-              className="absolute top-6 right-6 text-ink text-3xl focus:outline-none cursor-pointer"
+              className="absolute top-5 right-5 text-ink text-3xl focus:outline-none cursor-pointer"
               aria-label="Close Menu"
       >
-        &times;
+        <X />
       </button>
 
       <a 

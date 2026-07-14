@@ -1,5 +1,6 @@
 import { useEffect } from "react"
 import { ThemeToggle } from "./sections/ThemeToggle"
+import { Menu } from "lucide-react"
 
 export const Navbar = ({menuOpen, setMenuOpen}) => {
 
@@ -39,10 +40,10 @@ export const Navbar = ({menuOpen, setMenuOpen}) => {
             <ThemeToggle />
 
             <div 
-              className={`w-7 h-5 relative cursor-pointer x-40 md:hidden transition-opacity ${menuOpen ? "opacity-0 pointer-events-none" : "opacity-100"}`} 
+              className={`w-6 h-6 relative cursor-pointer x-40 md:hidden transition-opacity ${menuOpen ? "opacity-0 pointer-events-none" : "opacity-100"}`} 
               onClick={() => setMenuOpen((prev => !prev))}
             >
-              &#9776;
+              <Menu />
             </div>
           </div>
         </div>
