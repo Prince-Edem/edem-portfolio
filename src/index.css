@@ -1,0 +1,129 @@
+@import "tailwindcss";
+
+@theme {
+  /* Surfaces (theme-aware — see :root / .dark below) */
+  --color-surface: var(--surface);
+  --color-surface-deep: var(--surface-deep);
+
+  /* Text / neutral ink (theme-aware — see :root / .dark below) */
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-ink-faint: var(--ink-faint);
+  --color-ink-muted: var(--ink-muted);
+  --color-ink-subtle: var(--ink-subtle);
+  --color-track: var(--track);
+
+  /* Brand accents — stay consistent across light and dark mode */
+  --color-accent: #3b82f6;         /* blue-500 */
+  --color-accent-light: #60a5fa;   /* blue-400 */
+  --color-accent-lighter: #93c5fd; /* blue-300 */
+  --color-accent-cyan: #22d3ee;    /* cyan-400 */
+  --color-accent-orange: rgb(234, 88, 12);
+
+  /* Text sitting on a solid accent background (buttons) — always white,
+     regardless of theme, since the accent background itself doesn't change */
+  --color-on-accent: #ffffff;
+
+  --animate-blink: blink 0.8s step-end infinite;
+  --animate-loading-bar: loading 0.8s ease infinite;
+
+  @keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+
+
+  @keyframes loading {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(250%);
+    }
+  }
+}
+
+/* Light mode (default / root) — soft off-white background, black text */
+:root {
+  --surface: #f9fafb;       /* soft off-white, not harsh pure white */
+  --surface-deep: #f3f4f6;  /* page background, slightly deeper */
+  --ink: #000000;           /* primary text: black */
+  --ink-soft: #111827;
+  --ink-faint: #111827;
+  --ink-muted: #374151;
+  --ink-subtle: #4b5563;
+  --track: #eaebeea0;
+
+  --shadow-accent-20: rgba(59, 130, 246, 0.2);
+  --shadow-accent-40: rgba(59, 130, 246, 0.4);
+}
+
+/* Dark mode — toggled via .dark class on <html> by ThemeToggle */
+.dark {
+  --surface: #000000;
+  --surface-deep: #0a0a0a;
+  --ink: #ffffff;
+  --ink-soft: #e5e7eb;
+  --ink-faint: #f3f4f6;
+  --ink-muted: #d1d5db;
+  --ink-subtle: #9ca3af;
+  --track: #10101083;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--color-surface-deep);
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
+@layer utilities {
+  @keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+
+  .animate-blink {
+    animation: blink 0.8s step-end infinite;
+  }
+
+  @keyframes loading {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(250%);
+    }
+  }
+
+  .animate-loading-bar {
+    animation: loading 0.8s ease infinite;
+  }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
