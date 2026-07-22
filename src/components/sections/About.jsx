@@ -69,19 +69,21 @@ export const About = () => {
               </h3>
               <div className="space-y-4 text-ink-muted">
                 <div>
-                  <h4 className="font-semibold">
-                    intern at ABC startups (2019)
+                  <h4 className="font-semibold text-accent-cyan">
+                    intern at cure technologies (2025)
                   </h4>
                   <p>
-                    developed and maintained microservices for cloud-based applications.
+                    responsible for designing user-friendly, engaging, and 
+                    accessible interfaces for AgriFAAS Connect and NOVAC
                   </p>
                 </div>
                 <div>
-                  <h4 className="font-semibold">
-                    intern at DEF startups (2020)
+                  <h4 className="font-semibold text-accent-cyan">
+                    intern at alphirix limited (2026)
                   </h4>
                   <p>
-                    assisted in building front-end components and integrating RESTapi
+                    assisted in building frontend components and aligning the design 
+                    to the client's vision
                   </p>
                 </div>
               </div>
