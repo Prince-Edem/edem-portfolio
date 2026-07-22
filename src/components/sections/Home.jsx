@@ -6,12 +6,12 @@ export const Home = () => {
     <section id="home" className="min-h-screen flex items-center justify-center relative">
       <RevealOnScroll>
         <div className="max-w-5xl mx-auto text-center z-10 px-4">
-          <h1 className="text-5xl md:text-7xl font-bold  mb-6 bg-linear-to-r from-accent to-accent-cyan bg-clip-text text-transparent leading-right">
+          <h1 className="text-5xl md:text-7xl font-bold  mb-6 text-accent">
             hi, i'm Prince Edem Kobla Kutortse 
           </h1>
 
           <p className="text-ink-subtle text-lg mb-8 max-w-lg mx-auto">
-            frontend developer • data scientist • data analyst
+            full-stack engineer • data scientist • data analyst
           </p>
           <div className="flex justify-center space-x-4">
             <a 

@@ -29,7 +29,7 @@ export const Contact = () => {
       <RevealOnScroll>
         <div className="px-4 w-full max-w-2xl mx-auto">
           
-          <h2 className="text-3xl font-bold mb-8 bg-linear-to-r from-accent to-accent-cyan bg-clip-text text-transparent text-center">
+          <h2 className="text-3xl font-bold mb-8 text-accent text-center">
             get in touch
           </h2>
           <form className="space-y-6 border border-ink/10 p-8 rounded-3xl" onSubmit={handleSubmit}>
