@@ -2,6 +2,12 @@ import { RevealOnScroll } from "../RevealOnScroll";
 
 const baseUrl = import.meta.env.BASE_URL === "/" ? "" : import.meta.env.BASE_URL;
 
+const GitHubIcon = () => (
+  <svg viewBox="0 0 24 24" aria-hidden="true" className="h-5 w-5 fill-current">
+    <path d="M12 2C6.477 2 2 6.523 2 12.001c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.866-.014-1.699-2.782.605-3.369-1.341-3.369-1.341-.454-1.156-1.11-1.465-1.11-1.465-.908-.62.069-.608.069-.608 1.004.07 1.533 1.032 1.533 1.032.892 1.53 2.341 1.088 2.911.833.091-.647.349-1.088.634-1.338-2.221-.253-4.555-1.111-4.555-4.944 0-1.092.39-1.986 1.029-2.682-.103-.253-.446-1.275.098-2.657 0 0 .84-.269 2.75 1.026A9.543 9.543 0 0 1 12 6.844a9.54 9.54 0 0 1 2.503.338c1.909-1.295 2.748-1.026 2.748-1.026.546 1.382.202 2.404.1 2.657.64.696 1.028 1.59 1.028 2.682 0 3.84-2.337 4.688-4.565 4.937.359.309.678.918.678 1.849 0 1.334-.012 2.41-.012 2.738 0 .268.18.577.688.48A10.01 10.01 0 0 0 22 12.001C22 6.523 17.523 2 12 2Z" />
+  </svg>
+);
+
 const projects = [
   {
     title: "Recap - AI notetaker",
@@ -65,7 +71,18 @@ export const Projects = () => {
                 {/* Content */}
                 <div className="p-6 space-y-4">
                   <div>
-                    <h3 className="text-xl font-bold mb-2 text-accent-orange">{project.title}</h3>
+                    <div className="flex justify-between items-center">
+                      <h3 className="text-xl font-bold mb-2 text-accent-orange">{project.title}</h3>
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label={`View GitHub repo for ${project.title}`}
+                        className="inline-flex items-center justify-center rounded-full bg-accent/5 p-2 text-accent transition hover:-translate-y-0.5 hover:bg-accent/10 hover:shadow-[0_2px_8px_var(--shadow-accent-20)]"
+                      >
+                        <GitHubIcon className="w-3 h-3" />
+                      </a>
+                    </div>
                     <p className="text-ink-subtle ,b-2">{project.description}</p>
                   </div>
                   <div className="flex flex-wrap gap-2 mb-4">
@@ -83,6 +100,7 @@ export const Projects = () => {
                     >
                       view project → 
                     </a>
+
                   </div>
                 </div>
               </div>

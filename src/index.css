@@ -11,10 +11,10 @@
   --color-ink-subtle: var(--ink-subtle);
   --color-track: var(--track);
 
-  --color-accent: #3b82f6;        
-  --color-accent-light: #60a5fa;   
-  --color-accent-lighter: #93c5fd; 
-  --color-accent-cyan: #22d3ee;    
+  --color-accent: #3b82f6;
+  --color-accent-light: #60a5fa;
+  --color-accent-lighter: #93c5fd;
+  --color-accent-cyan: #22d3ee;
   --color-accent-orange: rgb(234, 88, 12);
 
   --color-on-accent: #ffffff;
@@ -52,6 +52,8 @@
   --ink-muted: #d1d5db;
   --ink-subtle: #9ca3af;
   --track: #10101083;
+  --scrollbar-track: #111827;
+  --scrollbar-thumb: #3b82f6;
 
   --shadow-accent-20: rgba(59, 130, 246, 0.2);
   --shadow-accent-40: rgba(59, 130, 246, 0.4);
@@ -67,6 +69,8 @@
   --ink-muted: #374151;
   --ink-subtle: #4b5563;
   --track: #eaebeea0;
+  --scrollbar-track: #e5e7eb;
+  --scrollbar-thumb: #3b82f6;
 }
 
 html, body {
@@ -76,6 +80,31 @@ html, body {
   scroll-behavior: smooth;
   overflow-x: hidden;
   width: 100%;
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+  scrollbar-width: thin;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+html::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+}
+
+html::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 9999px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+html::-webkit-scrollbar-thumb:hover,
+body::-webkit-scrollbar-thumb:hover {
+  background: color-mix(in srgb, var(--scrollbar-thumb) 80%, white 20%);
 }
 
 *, *::before, *::after {
