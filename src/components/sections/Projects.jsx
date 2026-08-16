@@ -2,37 +2,37 @@ import { RevealOnScroll } from "../RevealOnScroll";
 
 const projects = [
   {
-    title: "cloud platform",
-    description: "scalable cloud infrastructure management with real-time monitoring and automated scaling.",
-    image: "projects/project1.png",
-    tech: ["React", "Node.js", "AWS", "Docker"],
-    link: "#",
-    github: "#",
+    title: "Recap - AI notetaker",
+    description: "A modern landing page for a made-up application",
+    image: `${import.meta.env.BASE_URL}/projects/recap-landing-page.png`,
+    tech: ["React", "JavaScript", "TailwindCSS"],
+    link: "https://recap-webapp-sage.vercel.app",
+    github: "https://github.com/Prince-Edem/recap-landing-page",
   },
   {
-    title: "ai analytics dashboard",
-    description: "ml-powered data visualization platform with predictive analytics and interactive reports.",
-    image: "projects/project2.png",
-    tech: ["Python", "TensorFlow", "D3.js", "Flask"],
-    link: "#",
-    github: "#",
+    title: "Agora - Event management",
+    description: "A minimal event planner built to showcase clean full-stack fundamentals: create an event, share it via a unique link, and track RSVPs. No task boards, no budgeting, no pricing tiers",
+    image: `${import.meta.env.BASE_URL}/projects/agora-event-mgt.png`,
+    tech: ["Next.js", "TypeScript", "TailwindCSS", "PostgresSQL", "ShadCN"],
+    link: "https://agora-event-app.vercel.app",
+    github: "https://github.com/Prince-Edem/agora-event-app",
   },
-  {
-    title: "e-commerce platform",
-    description: "full-stack e-commerce with morder ui, secure payment integration and customizable product inventory.",
-    image: "projects/project4.png",
-    tech: ["Next.js", "TypeScript", "Stripe", "PostgreSQL"],
-    link: "#",
-    github: "#",
-  },
-  {
-    title: "real-time chat app",
-    description: "scalable chat platform supporting real-time messaging, presence and group chat features.",
-    image: "projects/project4.png",
-    tech: ["Socket io", "Express", "React", "Redis"],
-    link: "#",
-    github: "#",
-  },
+  // {
+  //   title: "e-commerce platform",
+  //   description: "full-stack e-commerce with morder ui, secure payment integration and customizable product inventory.",
+  //   image: `${import.meta.env.BASE_URL}/projects/project3.png`,
+  //   tech: ["Next.js", "TypeScript", "Stripe", "PostgreSQL"],
+  //   link: "#",
+  //   github: "#",
+  // },
+  // {
+  //   title: "real-time chat app",
+  //   description: "scalable chat platform supporting real-time messaging, presence and group chat features.",
+  //   image: `${import.meta.env.BASE_URL}/projects/project4.png`,
+  //   tech: ["Socket io", "Express", "React", "Redis"],
+  //   link: "#",
+  //   github: "#",
+  // },
 ]
 
 export const Projects = () => {
@@ -43,7 +43,7 @@ export const Projects = () => {
         <div className="max-w-5xl mx-auto px-4">
           <h2 className="text-3xl font-bold mb-8 text-accent text-center"
           >
-            featured projects
+            Projects
           </h2>
           {/* Projects Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

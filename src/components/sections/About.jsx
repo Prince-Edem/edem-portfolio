@@ -4,7 +4,7 @@ export const About = () => {
 
   const skillsCategories = [
     {
-      name: "frontend",
+      name: "Frontend",
       skills: [
         "React",
         "Next.js",
@@ -14,7 +14,7 @@ export const About = () => {
       ]
     },
     {
-      name: "backend",
+      name: "Backend",
       skills: [
         "Node.js",
         "Python",
@@ -24,7 +24,7 @@ export const About = () => {
       ]
     },
     {
-      name: "data science",
+      name: "Data Science",
       skills: [
         "Python",
         "Pandas",
@@ -36,7 +36,7 @@ export const About = () => {
       ]
     },
     {
-      name: "data analytics",
+      name: "Data Analytics",
       skills: [
         "Excel",
         "SQL",
@@ -54,12 +54,12 @@ export const About = () => {
       <RevealOnScroll>
         <div className="max-w-3xl mx-auto px-4">
           <h2 className="text-3xl font-bold mb-8 text-accent text-center">
-            about me
+            About me
           </h2>
 
           <div className="rounded-xl p-8 border border-ink/10 hover:-translate-y-1 transition-all bg-track">
             <p className="text-ink-muted mb-6">
-              i'm a full-stack engineer, data scientist, and data analyst passionate about building scalable web 
+              I'm a full-stack engineer, data scientist, and data analyst passionate about building scalable web 
               applications and transforming data into actionable insights. I enjoy creating efficient, user-focused 
               solutions that combine modern software development with data-driven decision-making.
             </p>
@@ -85,24 +85,24 @@ export const About = () => {
           <div className="grid grid-cols-1 mt-8">
             <div className="p-6 rounded-xl border border-ink/10 hover:-translate-y-1 transition-all bg-track">
               <h3 className="text-xl font-bold mb-4 text-accent-orange">
-                work experience
+                Work experience
               </h3>
               <div className="space-y-4 text-ink-muted">
                 <div>
                   <h4 className="font-semibold text-accent">
-                    intern at cure technologies (2025)
+                    Intern at cure technologies (2025)
                   </h4>
                   <p>
-                    responsible for designing user-friendly, engaging, and 
+                    Responsible for designing user-friendly, engaging, and 
                     accessible interfaces for AgriFAAS Connect and NOVAC
                   </p>
                 </div>
                 <div>
                   <h4 className="font-semibold text-accent">
-                    intern at alphirix limited (2026)
+                    Intern at alphirix limited (2026)
                   </h4>
                   <p>
-                    assisted in building frontend components and aligning the design 
+                    Assisted in building frontend components and aligning the design 
                     to the client's vision
                   </p>
                 </div>

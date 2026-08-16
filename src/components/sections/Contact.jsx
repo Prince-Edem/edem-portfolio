@@ -30,7 +30,7 @@ export const Contact = () => {
         <div className="px-4 w-full max-w-2xl mx-auto">
           
           <h2 className="text-3xl font-bold mb-8 text-accent text-center">
-            get in touch
+            Get in touch
           </h2>
           <form className="space-y-6 border border-ink/10 p-8 rounded-3xl" onSubmit={handleSubmit}>
             <div className="relative">
@@ -53,7 +53,7 @@ export const Contact = () => {
                 required 
                 value={formData.email}
                 className="w-full bg-ink/5 rounded py-3 px-4 text-ink transition focus:outline-none focus:border-accent focus:bg-accent/5" 
-                placeholder="example@gmail.com"
+                placeholder="johnsmith@gmail.com"
                 onChange={((e) => setFormData({...formData, email: e.target.value}))}                
               />
             </div>
