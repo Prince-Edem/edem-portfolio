@@ -96,7 +96,10 @@ export const Projects = () => {
                     ))}
                   </div>
                   <div className="flex justify-between items-center">
-                    <a href={project.link} className="text-accent hover:text-accent-light transition-colors my-4"
+                    <a href={project.link} 
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-accent hover:text-accent-light transition-colors my-4"
                     >
                       view project → 
                     </a>
