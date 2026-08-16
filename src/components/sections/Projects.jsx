@@ -1,10 +1,12 @@
 import { RevealOnScroll } from "../RevealOnScroll";
 
+const baseUrl = import.meta.env.BASE_URL === "/" ? "" : import.meta.env.BASE_URL;
+
 const projects = [
   {
     title: "Recap - AI notetaker",
     description: "A modern landing page for a made-up application",
-    image: `${import.meta.env.BASE_URL}/projects/recap-landing-page.png`,
+    image: `${baseUrl}/projects/recap-landing-page.png`,
     tech: ["React", "JavaScript", "TailwindCSS"],
     link: "https://recap-webapp-sage.vercel.app",
     github: "https://github.com/Prince-Edem/recap-landing-page",
@@ -12,7 +14,7 @@ const projects = [
   {
     title: "Agora - Event management",
     description: "A minimal event planner built to showcase clean full-stack fundamentals: create an event, share it via a unique link, and track RSVPs. No task boards, no budgeting, no pricing tiers",
-    image: `${import.meta.env.BASE_URL}/projects/agora-event-mgt.png`,
+    image: `${baseUrl}/projects/agora-event-mgt.png`,
     tech: ["Next.js", "TypeScript", "TailwindCSS", "PostgresSQL", "ShadCN"],
     link: "https://agora-event-app.vercel.app",
     github: "https://github.com/Prince-Edem/agora-event-app",
